@@ -1,0 +1,26 @@
+<DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compared Currency</title>
+</head>
+<body bgcolor="gray">
+<form>
+    <center>
+        <b>Compared Currency Details:</b>
+        <table border="1">
+            <tr>
+                <td> Currency Type </td>
+                <td> Currency Value </td>
+            </tr>
+            {% for key, value in data.items %}
+                <tr>
+                    <td>{{ key }}</td>
+                    <td>{{ value }}</td>
+                </tr>
+            {% endfor %}
+        </table>   
+    </center>
+</form>
+</body>
+</html>

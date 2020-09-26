@@ -1,0 +1,28 @@
+<DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency</title>
+</head>
+<body bgcolor="gray">
+<form action="./compare" method="get">
+    <center>
+        Select Currency:
+        <select id="currency" name="currency">
+            <option></option>    
+            {% for cur in data %}
+                <option>{{ cur }}</option>
+            {% endfor %}
+        </select>
+        <!-- <button onclick="show_element(event)"> Compare </button> -->
+        <input type="submit" name="compare" id="compare" value="Compare">
+    </center>
+</form>
+</body>
+<script>
+    // function show_element(event){
+    //     // alert($("#currency").val())
+    //     alert("=================")
+    // }
+</script>
+</html>
